@@ -13,7 +13,7 @@ const HVACCard = () => {
       </div>
 
       {/* Temperature Gauge */}
-      <div className="relative w-32 h-32 mx-auto mb-3">
+      <div className="relative w-20 h-20 mx-auto mb-3">
         {/* Background Circle */}
         <svg
           className="w-full h-full transform -rotate-90"
@@ -57,7 +57,7 @@ const HVACCard = () => {
       </div>
 
       {/* Temperature Info */}
-      <div className="flex items-center justify-center gap-3 mb-3 text-xs text-gray-600">
+      <div className="flex items-center justify-center gap-3 mb-3 text-xs text-gray-800 ">
         <span>Interior at {interiorTemp}°C</span>
         <span className="flex items-center gap-1">→ Target {targetTemp}°C</span>
       </div>

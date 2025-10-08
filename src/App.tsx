@@ -57,7 +57,10 @@ function App() {
           <Header currentTime={currentTime} />
 
           {/* Dashboard Cards Grid */}
-          <div className="grid grid-cols-3 gap-3 mt-3 h-300">
+          <div
+            className="grid grid-cols-3 gap-3 mt-3 "
+            style={{ height: "auto" }}
+          >
             <PowerUsageCard />
             <SecurityCard />
             <WaterCard />
