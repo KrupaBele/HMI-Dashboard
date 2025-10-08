@@ -26,14 +26,6 @@ const Header = ({ currentTime }: HeaderProps) => {
     <div className="flex items-center justify-between h-16">
       {/* Logo and Time */}
       <div className="flex items-center gap-6">
-        <div className="flex items-center">
-          <img
-            src="/logo.png"
-            alt="Company Logo"
-            className="h-25 w-20 object-contain"
-          />
-        </div>
-
         <div className="text-white">
           <div className="text-2xl font-light">{formatTime(currentTime)}</div>
           <div className="text-xs opacity-80">

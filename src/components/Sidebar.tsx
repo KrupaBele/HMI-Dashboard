@@ -26,6 +26,13 @@ const Sidebar = ({ currentView = "dashboard", onNavigate }: SidebarProps) => {
 
   return (
     <div className="relative z-20 w-20 flex flex-col items-center justify-center py-6">
+      <div className="flex items-center">
+        <img
+          src="/logo.png"
+          alt="Company Logo"
+          className="h-25 w-20 object-contain top-7 absolute"
+        />
+      </div>
       {/* Menu Items */}
       <div className="flex flex-col gap-3 items-center">
         {menuItems.map((item, index) => (
