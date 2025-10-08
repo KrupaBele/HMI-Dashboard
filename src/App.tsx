@@ -57,7 +57,7 @@ function App() {
           <Header currentTime={currentTime} />
 
           {/* Dashboard Cards Grid */}
-          <div className="grid grid-cols-3 gap-3 mt-3 h-[calc(100vh-120px)]">
+          <div className="grid grid-cols-3 gap-3 mt-3 h-300">
             <PowerUsageCard />
             <SecurityCard />
             <WaterCard />
