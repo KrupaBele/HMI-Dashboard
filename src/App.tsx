@@ -53,21 +53,19 @@ function App() {
       <div className="relative z-10 h-screen flex">
         <Sidebar currentView={currentView} onNavigate={setCurrentView} />
 
-        <div className="flex-1 p-4 mx-20">
+        <div className="flex-1 flex flex-col p-4 mx-20">
+          {/* Header stays fixed at the top */}
           <Header currentTime={currentTime} />
 
-          {/* Dashboard Cards Grid */}
-          <div
-            className="grid grid-cols-3 gap-3 mt-3 "
-            style={{ height: "auto" }}
-          >
-            <PowerUsageCard />
-            <SecurityCard />
-            <WaterCard />
-
-            {/* 4th card centered in 2nd column */}
-            <div className="col-start-2 ">
-              <HVACCard />
+          {/* Grid vertically centered in remaining space */}
+          <div className="flex-1 flex items-center justify-center">
+            <div className="grid grid-cols-3 gap-3 ">
+              <PowerUsageCard />
+              <SecurityCard />
+              <WaterCard />
+              <div className="col-start-2">
+                <HVACCard />
+              </div>
             </div>
           </div>
         </div>
